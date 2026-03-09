@@ -40,6 +40,11 @@ public class Base {
         }
     }
 
+    protected Base navigate (String url) {
+        page.navigate(url);
+        return this;
+    }
+
     protected Utils utils () {
         return new Utils(page);
     }
